@@ -10,7 +10,7 @@
 <body>
     <div class="btn_group_all">
     <div class="btn_group_up">
-        <input id="button1" type="button" value="">
+        <input id="button1" type="button" value=" ">
         <input id="button2" type="button" value="">
         <input id="button3" type="button" value="">
     </div>
@@ -42,262 +42,284 @@
         
 
 
-
-
-
-        if ( button1.value == "" ){
             button1.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button1.value = 'X'
-                    bool_of_btn1 = true;
-                    counter_of_move++;
-                    console.log(counter_of_move);
-                    check();
-                }else{
-                    if ( bool_of_btn1 == false ){
-                        button1.value = 'O';
+                if ( button1.value == " " ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button1.value = 'X'
                         bool_of_btn1 = true;
                         counter_of_move++;
+                        console.log(counter_of_move);
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
-                };
+                        if ( bool_of_btn1 == false ){
+                            button1.value = 'O';
+                            bool_of_btn1 = true;
+                            counter_of_move++;
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!')
+                        };
+                }
+            }else{
+                alert('Кнопка уже нажата!')
             };
-            
         };
 
 
-
-
-
-
-        if ( button2.value == "" ){
             button2.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button2.value = 'X'
-                    bool_of_btn2 = true;
-                    counter_of_move++;
-                    check();
-                }else{
-                    if ( bool_of_btn2 == false ){
-                        button2.value = 'O';
+                if ( button2.value == "" ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button2.value = 'X'
                         bool_of_btn2 = true;
                         counter_of_move++;
-                        console.log(counter_of_move);
-                        console.log(bool_of_btn2);
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
-                };
-            };
+                        if ( bool_of_btn2 == false ){
+                            button2.value = 'O';
+                            bool_of_btn2 = true;
+                            counter_of_move++;
+                            console.log(counter_of_move);
+                            console.log(bool_of_btn2);
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!');
+                        };
+                    };
+                }else{
+            alert('Кнопка уже нажата!');
         };
+    }
 
-        if ( button3.value == "" ){
+        
             button3.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button3.value = 'X'
-                    bool_of_btn3 = true;
-                    counter_of_move++;
-                    console.log(bool_of_btn3);
-                    check();
-                }else{
-                    if ( bool_of_btn3 == false ){
-                        button3.value = 'O';
+                if ( button3.value == "" ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button3.value = 'X'
                         bool_of_btn3 = true;
-                        counter_of_move++
+                        counter_of_move++;
+                        console.log(bool_of_btn3);
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
-                };
-            };
+                        if ( bool_of_btn3 == false ){
+                            button3.value = 'O';
+                            bool_of_btn3 = true;
+                            counter_of_move++
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!')
+                        }
+                    };
+                }else{
+                    alert('Кнопка уже нажата!')
+                }
         };
 
-        if ( button4.value == "" ){
+        
             button4.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button4.value = 'X'
-                    bool_of_btn4 = true;
-                    counter_of_move++;
-                    check();
-                }else{
-                    if ( bool_of_btn4 == false ){
-                        button4.value = 'O';
+                if ( button4.value == "" ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button4.value = 'X'
                         bool_of_btn4 = true;
                         counter_of_move++;
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
-                };
-            };
+                        if ( bool_of_btn4 == false ){
+                            button4.value = 'O';
+                            bool_of_btn4 = true;
+                            counter_of_move++;
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!')
+                        }
+                    };
+            }else{
+                alert('Кнопка уже нажата!')
+            }
         };
 
-        if ( button5.value == "" ){
+        
             button5.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button5.value = 'X'
-                    bool_of_btn5 = true;
-                    counter_of_move++;
-                    check();
-                }else{
-                    if ( bool_of_btn5 == false ){
-                        button5.value = 'O';
+                if ( button5.value == "" ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button5.value = 'X'
                         bool_of_btn5 = true;
                         counter_of_move++;
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
+                        if ( bool_of_btn5 == false ){
+                            button5.value = 'O';
+                            bool_of_btn5 = true;
+                            counter_of_move++;
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!')
+                        }
                 };
-            };
+            }else{
+                alert('Кнопка уже нажата!')
+            }
         };
 
-        if ( button6.value == "" ){
+        
             button6.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button6.value = 'X'
-                    bool_of_btn6 = true;
-                    counter_of_move++;
-                    check();
-                }else{
-                    if ( bool_of_btn6 == false ){
-                        button6.value = 'O';
+                if ( button6.value == "" ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button6.value = 'X'
                         bool_of_btn6 = true;
                         counter_of_move++;
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
-                };
-            };
+                        if ( bool_of_btn6 == false ){
+                            button6.value = 'O';
+                            bool_of_btn6 = true;
+                            counter_of_move++;
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!')
+                        }
+                    };
+            }else{
+                alert('Кнопка уже нажата!')
+            }
         };
 
-        if ( button7.value == "" ){
+        
             button7.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button7.value = 'X'
-                    bool_of_btn7 = true;
-                    counter_of_move++;
-                    check();
-                }else{
-                    if ( bool_of_btn7 == false ){
-                        button7.value = 'O';
+                if ( button7.value == "" ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button7.value = 'X'
                         bool_of_btn7 = true;
                         counter_of_move++;
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
-                };
-            };
+                        if ( bool_of_btn7 == false ){
+                            button7.value = 'O';
+                            bool_of_btn7 = true;
+                            counter_of_move++;
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!')
+                        }
+                    };
+            }else{
+                alert('Кнопка уже нажата!')
+            }
         };
 
-        if ( button8.value == "" ){
+        
             button8.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button8.value = 'X'
-                    bool_of_btn8 = true;
-                    counter_of_move++;
-                    check();
-                }else{
-                    if ( bool_of_btn8 == false ){
-                        button8.value = 'O';
+                if ( button8.value == "" ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button8.value = 'X'
                         bool_of_btn8 = true;
                         counter_of_move++;
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
-                };
-            };
+                        if ( bool_of_btn8 == false ){
+                            button8.value = 'O';
+                            bool_of_btn8 = true;
+                            counter_of_move++;
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!')
+                        }
+                    };
+            }else{
+                alert('Кнопка уже нажата!')
+            }
         };
 
-        if ( button9.value == "" ){
+        
             button9.onclick = function() {
-                if ( counter_of_move % 2 == 0 ){
-                    button9.value = 'X'
-                    bool_of_btn9 = true;
-                    counter_of_move++;
-                    check();
-                }else{
-                    if ( bool_of_btn9 == false ){
-                        button9.value = 'O';
+                if ( button9.value == "" ){
+                    if ( counter_of_move % 2 == 0 ){
+                        button9.value = 'X'
                         bool_of_btn9 = true;
                         counter_of_move++;
                         check();
                     }else{
-                        alert('Кнопка уже нажата!')
-                    }
-                };
-            };
+                        if ( bool_of_btn9 == false ){
+                            button9.value = 'O';
+                            bool_of_btn9 = true;
+                            counter_of_move++;
+                            check();
+                        }else{
+                            alert('Кнопка уже нажата!')
+                        }
+                    };
+            }else{
+                alert('Кнопка уже нажата!')
+            }
         };
 
         function check(){
-            if ( button1.value == 'X' & button2.value == 'X' & button3.value == 'X' ){
-                alert('Победили Крестики');
-            };
-            if ( button4.value == 'X' & button5.value == 'X' & button6.value == 'X' ){
-                alert('Победили Крестики');
-            };
-            if ( button7.value == 'X' & button8.value == 'X' & button9.value == 'X' ){
-                alert('Победили Крестики!');
-            };
-
-
-
-            if ( button1.value == 'X' & button4.value == 'X' & button7.value == 'X' ){
-                alert('Победили Крестики!');
-            };
-            if ( button2.value == 'X' & button5.value == 'X' & button8.value == 'X' ){
-                alert('Победили Крестики!');
-            };
-            if ( button3.value == 'X' & button6.value == 'X' & button9.value == 'X' ){
-                alert('Победили Крестики!');
-            };
-
-
-            if ( button1.value == 'X' & button5.value == 'X' & button9.value == 'X' ){
-                alert('Победили Крестики!');
-            };
-            if ( button3.value == 'X' & button5.value == 'X' & button7.value == 'X' ){
-                alert('Победили Крестики!');
-            };
-
-
-
-
-            if ( button1.value == 'O' & button2.value == 'O' & button3.value == 'O' ){
-                alert('Победили Нолики');
-            };
-            if ( button4.value == 'O' & button5.value == 'O' & button6.value == 'O' ){
-                alert('Победили Нолики');
-            };
-            if ( button7.value == 'O' & button8.value == 'O' & button9.value == 'O' ){
-                alert('Победили Нолики!');
-            };
-
-
-
-            if ( button1.value == 'O' & button4.value == 'O' & button7.value == 'O' ){
-                alert('Победили Нолики!');
-            };
-            if ( button2.value == 'O' & button5.value == 'O' & button8.value == 'O' ){
-                alert('Победили Нолики!');
-            };
-            if ( button3.value == 'O' & button6.value == 'O' & button9.value == 'O' ){
-                alert('Победили Нолики!');
-            };
-
-
-            if ( button1.value == 'O' & button5.value == 'O' & button9.value == 'O' ){
-                alert('Победили Нолики!');
-            };
-            if ( button3.value == 'O' & button5.value == 'O' & button7.value == 'O' ){
-                alert('Победили Нолики!');
-            };
+            if (true){
+                if ( button1.value == 'X' & button2.value == 'X' & button3.value == 'X' ){
+                    alert('Победили Крестики');
+                };
+                if ( button4.value == 'X' & button5.value == 'X' & button6.value == 'X' ){
+                    alert('Победили Крестики');
+                };
+                if ( button7.value == 'X' & button8.value == 'X' & button9.value == 'X' ){
+                    alert('Победили Крестики!');
+                };
+    
+    
+    
+                if ( button1.value == 'X' & button4.value == 'X' & button7.value == 'X' ){
+                    alert('Победили Крестики!');
+                };
+                if ( button2.value == 'X' & button5.value == 'X' & button8.value == 'X' ){
+                    alert('Победили Крестики!');
+                };
+                if ( button3.value == 'X' & button6.value == 'X' & button9.value == 'X' ){
+                    alert('Победили Крестики!');
+                };
+    
+    
+                if ( button1.value == 'X' & button5.value == 'X' & button9.value == 'X' ){
+                    alert('Победили Крестики!');
+                };
+                if ( button3.value == 'X' & button5.value == 'X' & button7.value == 'X' ){
+                    alert('Победили Крестики!');
+                };
+    
+    
+    
+    
+                if ( button1.value == 'O' & button2.value == 'O' & button3.value == 'O' ){
+                    alert('Победили Нолики');
+                };
+                if ( button4.value == 'O' & button5.value == 'O' & button6.value == 'O' ){
+                    alert('Победили Нолики');
+                };
+                if ( button7.value == 'O' & button8.value == 'O' & button9.value == 'O' ){
+                    alert('Победили Нолики!');
+                };
+    
+    
+    
+                if ( button1.value == 'O' & button4.value == 'O' & button7.value == 'O' ){
+                    alert('Победили Нолики!');
+                };
+                if ( button2.value == 'O' & button5.value == 'O' & button8.value == 'O' ){
+                    alert('Победили Нолики!');
+                };
+                if ( button3.value == 'O' & button6.value == 'O' & button9.value == 'O' ){
+                    alert('Победили Нолики!');
+                };
+    
+    
+                if ( button1.value == 'O' & button5.value == 'O' & button9.value == 'O' ){
+                    alert('Победили Нолики!');
+                };
+                if ( button3.value == 'O' & button5.value == 'O' & button7.value == 'O' ){
+                    alert('Победили Нолики!');
+                };
+            }else{
+                alert('Ничья!')
+            }
+            
         }
 
 
